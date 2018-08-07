@@ -1,0 +1,61 @@
+#header {
+    line-height: 50px;
+    text-align: center;
+    background-color: lightblue;
+    width: 100%;
+    height: 50px;
+}
+
+#shamansRemaining {
+    text-align: center;
+}
+
+#enemy1, #enemy2 {
+    height: 50px;
+    background-color: lightpink;}
+
+#space {
+    text-align: center;
+}
+
+#char1 {
+    height: 350px;
+    width: 100px;
+    background-color: aquamarine;
+}
+
+.stats {
+    text-align: center;
+}
+
+#attackingImg {
+    height: 300px;
+    background-color: lightseagreen;
+}
+
+#vs {
+    text-align: center;
+    line-height: 100px;
+    background-color: lightblue;
+    height: 100px;
+    width: 100px;
+}
+
+#char2 {
+    height: 350px;
+    width: 100px;
+    background-color: lightpink;
+}
+
+#defendingImg {
+    height: 300px;
+    background-color: lightcoral;
+}
+
+#combatLog {
+    text-align: center;
+    width: 100%;
+    background-color: lightblue;
+    height: 200px;
+
+}

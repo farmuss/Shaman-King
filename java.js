@@ -10,7 +10,7 @@ var rio = {
     hp: 100 
 }
 
-var len = {
+var jun = {
     name: "Len Tao",
     picture: "Blank for now",
     hp: 100 

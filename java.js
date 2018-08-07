@@ -1,3 +1,5 @@
+alert("WORK IN PROGRESS! :D");
+
 var yoh = {
     name: "Yoh Asakura",
     picture: '<img src="images/yoh.jpg">',
@@ -32,4 +34,14 @@ $(document).ready(function() {
         $("#defenderHp").html(zeke.hp);
     });
 });
+$(document).ready(function() {
+$("#reset").on("click", function(){
+    $("#attackerName").html("Name");
+    $("#attackerImg").html(" ");
+    $("#attackerHp").html("HP");
+    $("#defenderName").html("Name");
+    $("#defenderImg").html(" ");
+    $("#defenderHp").html("HP");
 
+});
+});

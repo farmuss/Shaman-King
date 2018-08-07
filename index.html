@@ -19,6 +19,7 @@
 </head>
 
 <body>
+    <button id="test">TEST</button>
 
     <!-- Header -->
     <header id="header">Shaman King
@@ -51,22 +52,32 @@
         <div class="row">
 
             <!-- Attacking Character -->
-            <div class="col-sm-12 col-md-5" id="char1">
+            <div class="col-md-5" id="char1">
 
                 <!-- name -->
                 <div class="row stats">
-                    <div class="col-md-12 stats">Name</div>
+                    <div class="col-md-12 stats">
+                        <p>
+                            <span id="attackerName">Name</span>
+                        </p>
+                    </div>
                 </div>
-
                 <!-- image -->
                 <div class="row">
-                    <div id="attackingImg" class="col-md-12">                    
+                    <div class="col-md-12">
+                        <div id="attackerImg">
+                        </div>
                     </div>
                 </div>
 
                 <!-- hp -->
                 <div class="row">
-                    <div class="col-md-12 stats">HP</div>
+                    <div class="col-md-12 stats">
+                        <p>
+                            <span id="attackerHp">HP</span>
+                        </p>
+
+                    </div>
                 </div>
 
             </div>
@@ -77,21 +88,32 @@
             </div>
 
             <!-- Defending Character -->
-            <div class="col-sm-12 col-md-5" id="char2">
+            <div class="col-md-5" id="char2">
 
                 <!-- name -->
                 <div class="row stats">
-                    <div class="col-md-12 stats">Name</div>
+                    <div class="col-md-12 stats">
+                        <p>
+                            <span id="defenderName">Name</span>
+                        </p>
+                    </div>
                 </div>
 
                 <!-- image -->
                 <div class="row">
-                    <div id="defendingImg" class="col-md-12"></div>
+                    <div class="col-md-12">
+                        <div id="defenderImg"></div>
+                    </div>
                 </div>
 
                 <!-- hp -->
                 <div class="row">
-                    <div class="col-md-12 stats">HP</div>
+                    <div class="col-md-12 stats">
+                        <p>
+                            <span id="defenderHp">HP</span>
+                        </p>
+
+                    </div>
                 </div>
 
             </div>
@@ -109,7 +131,7 @@
 
     <!-- Combat Log -->
     <footer id="combatLog">Combat Log</footer>
-    <button id="test">TEST</button>
+
 </body>
 
 </html>

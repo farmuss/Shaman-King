@@ -1,67 +1,37 @@
-p {
-    margin-bottom: 0;
+p, h2 {
+    text-align: center;
 }
 
-#header {
-    line-height: 50px;
-    text-align: center;
-    background-color: lightblue;
+#images {
+    height: 210px;
     width: 100%;
-    height: 50px;
 }
 
-#shamansRemaining {
-    text-align: center;
+#randomNumber, #currentNumber, 
+#wolfStart, #pandaStart, 
+#eagleStart, #tigerStart{
+    font-weight: 600;
+    font-size: 40px;
 }
 
-#enemy1, #enemy2 {
-    height: 70px;
-    width: 70px;
-    background-color: lightpink;}
-
-#space {
-    text-align: center;
+img {
+    cursor: pointer;
+    border-radius: 120px;
+    border-width: 3px;
+    border-style: solid;
 }
 
-#char1 {
-    height: 350px;
-    background-color: aquamarine;
+img:hover {
+    border-width: 8px;
 }
 
-.stats {
-    text-align: center;
+img:active {
+    height: 198px;
+    width: 198px;
+    border-color: green;
 }
 
-#attackerImg {
-    height: 300px;
-    background-color: lightseagreen;
-}
-#yoh {
-    height: 300px;
-    width: 445px;
-}
-#vs {
-    text-align: center;
-    line-height: 100px;
-    background-color: lightblue;
-    height: 100px;
-    width: 100px;
+.container {
+    background-color: #eeeeee;
 }
 
-#char2 {
-    height: 350px;
-    background-color: lightpink;
-}
-
-#defenderImg {
-    height: 300px;
-    background-color: lightcoral;
-}
-
-#combatLog {
-    text-align: center;
-    width: 100%;
-    background-color: lightblue;
-    height: 200px;
-
-}

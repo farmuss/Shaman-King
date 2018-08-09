@@ -1,11 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Shaman King</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
@@ -14,124 +13,155 @@
         crossorigin="anonymous">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
-    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <link rel="stylesheet" href="style.css">
     <script src="java.js"></script>
+    <title>Shaman King</title>
 </head>
 
 <body>
-    <button id="test">TEST</button>
-    <button id="reset">RESET</button>
-
-    <!-- Header -->
-    <header id="header">Shaman King
-    </header>
-
-    <!-- Bootstrap_Bootstrap_Bootstrap_Bootstrap_Bootstrap_Bootstrap_Bootstrap_Bootstrap_Bootstrap_Bootstrap_Bootstrap -->
     <div class="container">
 
-
-        <!-- Shamans Remaining -->
+        <!-- RULES -->
         <div class="row">
-            <div id="shamansRemaining" class="col-md-12">Shamans Remaining</div>
+            <div class="col-md-12">
+                <h2>
+                    <span id="rules">RULES</span>
+                </h2>
+            </div>
         </div>
+        <!-- RULES -->
 
-        <div class="row">
-            <div class="col-md-2"></div>
-            <div class="col-sm-6 col-md-3" id="enemy1"></div>
-            <div class="col-md-2"></div>
-            <div class="col-sm-6 col-md-3" id="enemy2"></div>
-            <div class="col-md-2"></div>
-        </div>
-
-        <!-- Empty Line -->
-        <div id="space" class="row">
-            <div class="col-md-12">Space</div>
-        </div>
-
-        <!-- Main Characters -->
+        <!-- MATCH THE SCORE -->
         <div class="row">
 
-            <!-- Attacking Character -->
-            <div class="col-md-5" id="char1">
-
-                <!-- name -->
-                <div class="row stats">
-                    <div class="col-md-12 stats">
-                        <p>
-                            <span id="attackerName">Name</span>
-                        </p>
-                    </div>
-                </div>
-                <!-- image -->
-                <div class="row">
-                    <div class="col-md-12">
-                        <div id="attackerImg">
-                        </div>
-                    </div>
-                </div>
-
-                <!-- hp -->
-                <div class="row">
-                    <div class="col-md-12 stats">
-                        <p>
-                            <span id="attackerHp">HP</span>
-                        </p>
-
-                    </div>
-                </div>
-
+            <!-- SPACE -->
+            <div class="col-md-1">
+                <p>
+                    <span class="space"></span>
+                </p>
             </div>
 
-            <!-- VS -->
-            <div class="col-md-2 d-flex justify-content-center align-items-center">
-                <div id="vs">VS</div>
+            <!-- CURRENT NUMBER -->
+            <div class="col-md-4">
+                <p>YOUR NUMBER:
+                    <span id="currentNumber"></span>
+                </p>
             </div>
 
-            <!-- Defending Character -->
-            <div class="col-md-5" id="char2">
-
-                <!-- name -->
-                <div class="row stats">
-                    <div class="col-md-12 stats">
-                        <p>
-                            <span id="defenderName">Name</span>
-                        </p>
-                    </div>
-                </div>
-
-                <!-- image -->
-                <div class="row">
-                    <div class="col-md-12">
-                        <div id="defenderImg"></div>
-                    </div>
-                </div>
-
-                <!-- hp -->
-                <div class="row">
-                    <div class="col-md-12 stats">
-                        <p>
-                            <span id="defenderHp">HP</span>
-                        </p>
-
-                    </div>
-                </div>
-
+            <!-- SPACE -->
+            <div class="col-md-2">
+                <p>
+                    <span class="space"></span>
+                </p>
             </div>
 
+            <!-- RANDOM NUMBER -->
+            <div class="col-md-4">
+                <p>MATCH THIS NUMBER:
+                    <span id="randomNumber"></span>
+                </p>
+            </div>
 
+            <!-- SPACE -->
+            <div class="col-md-1">
+                <p>
+                    <span class="space"></span>
+                </p>
+            </div>
+        </div>
+        <!-- MATCH THE SCORE -->
+
+        <hr>
+        <!-- ANIMALS  -->
+        <div class="row">
+            <div class="col-md-3 d-flex justify-content-center">
+                <div id="wolf" class="animals">
+                    <img src="images/wolf.png" id="wolfImg" alt="wolf">
+                </div>
+            </div>
+            <div class="col-md-3 d-flex justify-content-center">
+                <div id="panda" class="animals">
+                    <img src="images/panda.png" id="pandaImg" alt="panda">
+                </div>
+            </div>
+            <div class="col-md-3 d-flex justify-content-center">
+                <div id="eagle" class="animals">
+                    <img src="images/eagle.png" id="eagleImg" alt="eagle">
+                </div>
+            </div>
+            <div class="col-md-3 d-flex justify-content-center">
+                <div id="tiger" class="animals">
+                    <img src="images/tiger.png" id="tigerImg" alt="tiger">
+
+                </div>
+            </div>
+        </div>
+        <!-- ANIMALS -->
+        <hr>
+
+        <div class="row">
+            <div class="col-md-3">
+                <p><span id="wolfStart"></span></p>
+            </div>
+            <div class="col-md-3">
+                <p><span id="pandaStart"></span></p>
+            </div>
+            <div class="col-md-3">
+                <p><span id="eagleStart"></span></p>
+            </div>
+            <div class="col-md-3">
+                <p><span id="tigerStart"></span></p>
+            </div>
         </div>
 
-        <!-- Empty Line -->
-        <div id="space" class="row">
-            <div class="col-md-12">Space</div>
+        <!-- WINS AND LOSSES -->
+        <div class="row">
+
+            <!-- SPACE -->
+            <div class="col-md-1">
+                <p>
+                    <span class="space"></span>
+                </p>
+            </div>
+            <!-- WINS -->
+            <div class="col-md-4">
+                <p>WINS:
+                    <span id="wins"></span>
+                </p>
+            </div>
+
+            <!-- SPACE -->
+            <div class="col-md-2">
+                <p>
+                    <span class="space"></span>
+                </p>
+            </div>
+            <!-- LOSSES -->
+            <div class="col-md-4">
+                <p>LOSSES:
+                    <span id="losses"></span>
+                </p>
+            </div>
+
+            <!-- SPACE -->
+            <div class="col-md-1">
+                <p>
+                    <span class="space"></span>
+                </p>
+            </div>
         </div>
+        <!-- WINS AND LOSSES -->
+
+        <!-- RESET BUTTON -->
+        <div class="row">
+            <div class="col-md-12 d-flex justify-content-center">
+                <button>START OVER</button>
+            </div>
+        </div>
+        <!-- RESET BUTTON -->
+            
 
     </div>
-    <!-- Bootstrap_Bootstrap_Bootstrap_Bootstrap_Bootstrap_Bootstrap_Bootstrap_Bootstrap_Bootstrap_Bootstrap_Bootstrap -->
-
-    <!-- Combat Log -->
-    <footer id="combatLog">Combat Log</footer>
-
 </body>
 
 </html>

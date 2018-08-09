@@ -1,3 +1,5 @@
+alert("Work in Progress :D");
+
 $(document).ready(function () {
     var wolf = Math.floor(Math.random() * 11) + 1;
     var panda = Math.floor(Math.random() * 11) + 1;
